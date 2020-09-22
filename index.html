@@ -8,7 +8,7 @@
   <script>
     var el = document.getElementsByClassName('clicker')[0];
     el.addEventListener('click', function() {
-      fetch('http://be.blockbuck.tech/setcookie-httponly', {
+      fetch('//be.blockbuck.tech/setcookie-httponly', {
           method: 'GET',
         })
           .then(
@@ -22,7 +22,7 @@
               // Examine the text in the response
               response.json().then(function (data) {
                 console.log(data);
-                window.location = 'https://www.pondo.tech'
+                window.location = 'www.pondo.tech'
               });
             }
           )
