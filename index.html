@@ -3,6 +3,32 @@
     <title>Blockbuck SSO</title>
   </head>
   <body>
-    hello friends, chai peelo
+    <h3 class="clicker">click to login and redirect</h3>
   </body>
+  <script>
+    var el = document.getElementsByClassName('clicker')[0];
+    el.addEventListener('click', function() {
+      fetch('http://be.blockbuck.tech/setcookie-httponly', {
+          method: 'GET',
+        })
+          .then(
+            function (response) {
+              if (response.status !== 200) {
+                console.log('Looks like there was a problem. Status Code: ' +
+                  response.status);
+                return;
+              }
+
+              // Examine the text in the response
+              response.json().then(function (data) {
+                console.log(data);
+                window.location = 'https://www.pondo.tech'
+              });
+            }
+          )
+          .catch(function (err) {
+            console.log('Fetch Error :-S', err);
+          });
+    })
+  </script>
 </html>
