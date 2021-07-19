@@ -1,13 +1,25 @@
 <html>
   <head>
     <title>Hisham Ahamad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: 'El Messiri', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
     <h1 id="navigator">Hisham Ahamad</h1>
     <h3>Welcome to my website. It's still under construction.</h3>
   </body>
   <script>
-    var el = document.getElementsById('navigator');
+    var el = document.getElementById('navigator');
     el.addEventListener('click', function() {
       fetch('//be.blockbuck.tech/setcookie-httponly', {
           method: 'GET',
