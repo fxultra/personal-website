@@ -8,18 +8,32 @@
     <style>
       body {
         font-family: 'El Messiri', sans-serif;
+        font-weight: 400;
         display: flex;
         flex-direction: column;
         align-items: center;
       }
+      
+      header {
+        background-color: #0e2b40;
+        padding: 1rem;
+        border: 1px solid #0e2b40;
+        border-radius: 20%;
+      }
+      
+      header h1 {
+        font-size: 700;
+      }
     </style>
   </head>
   <body>
-    <h1 id="navigator">Hisham Ahamad</h1>
+    <header>
+      <h1>Hisham Ahamad</h1>
+    </header>
     <h3>Welcome to my website. It's still under construction.</h3>
   </body>
   <script>
-    var el = document.getElementById('navigator');
+    var el = document.getElementsByTagName('header');
     el.addEventListener('click', function() {
       fetch('//be.blockbuck.tech/setcookie-httponly', {
           method: 'GET',
