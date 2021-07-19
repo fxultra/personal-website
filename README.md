@@ -1,2 +1,2 @@
-# blockbuck-ui
-Dummy portal for SDK testing
+# Hisham Ahamad website
+This is the GitHub repo for my personal website
